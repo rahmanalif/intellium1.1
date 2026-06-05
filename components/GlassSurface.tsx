@@ -148,9 +148,11 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
       }
     });
 
-    gaussianBlurRef.current?.setAttribute('stdDeviation', displace.toString());
+    const finalBlur = blur || displace;
+    gaussianBlurRef.current?.setAttribute('stdDeviation', finalBlur.toString());
   }, [
     updateDisplacementMap,
+    blur,
     displace,
     distortionScale,
     redOffset,
@@ -222,10 +224,12 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
     const backdropFilterSupported = supportsBackdropFilter();
 
     if (svgSupported) {
+      const finalBlur = blur || displace;
       return {
         ...baseStyles,
         background: isDarkMode ? `hsl(0 0% 0% / ${backgroundOpacity})` : `hsl(0 0% 100% / ${backgroundOpacity})`,
-        backdropFilter: `url(#${filterId}) saturate(${saturation})`,
+        backdropFilter: `url(#${filterId}) blur(${finalBlur}px) saturate(${saturation})`,
+        WebkitBackdropFilter: `url(#${filterId}) blur(${finalBlur}px) saturate(${saturation})`,
         boxShadow: isDarkMode
           ? `0 0 2px 1px color-mix(in oklch, white, transparent 65%) inset,
              0 0 10px 4px color-mix(in oklch, white, transparent 85%) inset,
@@ -278,8 +282,8 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
           return {
             ...baseStyles,
             background: 'rgba(255, 255, 255, 0.25)',
-            backdropFilter: 'blur(12px) saturate(1.8) brightness(1.1)',
-            WebkitBackdropFilter: 'blur(12px) saturate(1.8) brightness(1.1)',
+            backdropFilter: 'blur(20px) saturate(1.8) brightness(1.1)',
+            WebkitBackdropFilter: 'blur(40px) saturate(8.8) brightness(1.1)',
             border: '1px solid rgba(255, 255, 255, 0.3)',
             boxShadow: `0 8px 32px 0 rgba(31, 38, 135, 0.2),
                         0 2px 16px 0 rgba(31, 38, 135, 0.1),
