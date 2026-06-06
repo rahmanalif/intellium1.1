@@ -5,17 +5,17 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const inspirations = [
   {
     title: "Case Study of Uber",
-    image: "/globe.svg", // Using available assets as placeholders
+    image: "/image.webp",
     gradient: "from-blue-600/20 to-transparent",
   },
   {
     title: "Case Study of Spotify",
-    image: "/window.svg",
+    image: "/image (1).webp",
     gradient: "from-green-600/20 to-transparent",
   },
   {
     title: "Case Study of AirBNB",
-    image: "/file.svg",
+    image: "/image.webp", // Using Uber image as requested for AirBNB as well
     gradient: "from-rose-600/20 to-transparent",
   }
 ];
@@ -47,7 +47,7 @@ const GlobalInspirations = () => {
           </div>
 
           {/* Carousel Section */}
-          <div className="w-screen sm:w-[500px] md:w-[700px] lg:w-full ml-[calc(-50vw+50%)] sm:ml-0 overflow-hidden relative lg:overflow-visible">
+          <div className="w-screen sm:w-[500px] md:w-[700px] lg:w-full ml-[calc(-50vw+50%)] sm:ml-0 overflow-hidden relative lg:overflow-visible group">
             <div className="relative w-full overflow-x-auto no-scrollbar scroll-smooth">
               <div className="flex gap-6 px-4 sm:px-0 lg:px-0 pb-8">
                 {inspirations.map((item, index) => (
@@ -56,17 +56,17 @@ const GlobalInspirations = () => {
                     className="min-w-[90%] sm:min-w-[80%] md:min-w-[60%] lg:min-w-[520px] shrink-0"
                   >
                     <div 
-                      className="w-full h-full overflow-hidden rounded-2xl border border-[#525252] flex flex-col" 
+                      className="w-full h-full overflow-hidden rounded-2xl border border-[#525252] flex flex-col group/card hover:border-zinc-500 transition-colors duration-300" 
                       style={{ backgroundImage: 'linear-gradient(138deg, rgb(23,23,23) 0%, rgba(23,23,23,0.7) 50%, rgb(23,23,23) 100%)' }}
                     >
                       {/* Image Area */}
                       <div className="relative h-48 md:h-64 lg:h-[304px] overflow-hidden bg-zinc-900/50">
-                        <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient}`}></div>
+                        <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} z-10`}></div>
                         <Image 
                           alt={item.title} 
                           src={item.image} 
                           fill 
-                          className="rounded-tl-lg shadow-2xl object-contain p-12 opacity-40 group-hover:scale-110 transition-transform duration-500"
+                          className="object-cover transition-transform duration-700 group-hover/card:scale-105"
                         />
                       </div>
 

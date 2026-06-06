@@ -1,8 +1,47 @@
 import React from 'react';
 
+const logos = [
+  {
+    name: 'Vercel',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg',
+  },
+  {
+    name: 'Nextjs',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881475/nextjs_logo_dark_gfkf8m.svg',
+  },
+  {
+    name: 'Prime',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg',
+  },
+  {
+    name: 'Trustpilot',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tkfspxqmjflfllbuqxsi.svg',
+  },
+  {
+    name: 'Webflow',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/nymiivu48d5lywhf9rpf.svg',
+  },
+  {
+    name: 'Airbnb',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/pmblusboe7vkw8vxdknx.svg',
+  },
+  {
+    name: 'Tina',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/afqhiygywyphuou6xtxc.svg',
+  },
+  {
+    name: 'Stackoverflow',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/ts1j4mkooxqmscgptafa.svg',
+  },
+  {
+    name: 'mistral',
+    url: 'https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tyos2ayezryjskox3wzs.svg',
+  },
+];
+
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden flex flex-col min-h-screen">
       {/* Background Glows */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10">
         <div className="absolute bg-[#253a7a] blur-[60px] md:blur-[100px] opacity-50 rounded-full w-full max-w-[500px] h-[500px]" style={{ top: '-10%', left: '-10%' }}></div>
@@ -10,7 +49,7 @@ const Hero = () => {
         <div className="absolute bg-[#253a7a] blur-[60px] md:blur-[100px] opacity-40 rounded-full w-full max-w-[600px] h-[600px]" style={{ bottom: '10%', right: '-10%' }}></div>
       </div>
 
-      <div className="container mx-auto px-6 sm:px-12 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-12 pt-32 min-h-screen">
+      <div className="container mx-auto px-6 sm:px-12 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-12 pt-32 flex-grow">
         {/* Left Content */}
         <div className="flex-1 text-left z-10 flex flex-col gap-10">
           <div className="flex flex-col gap-5">
@@ -52,6 +91,37 @@ const Hero = () => {
             <source src="/hero-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+        </div>
+      </div>
+
+      {/* Logo Cloud Section at the Bottom */}
+      <div className="w-full pb-16 pt-8 z-10">
+        <div className="mx-auto w-full px-4 md:px-8">
+          <div
+            className="group relative flex gap-6 overflow-hidden p-2"
+            style={{
+              maskImage:
+                'linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 95%)',
+            }}
+          >
+            {Array(5)
+              .fill(null)
+              .map((_, index) => (
+                <div
+                  key={index}
+                  className="flex shrink-0 animate-logo-cloud group-hover:[animation-play-state:paused] flex-row justify-around gap-12"
+                >
+                  {logos.map((logo, key) => (
+                    <img
+                      key={key}
+                      src={logo.url}
+                      className="h-8 w-auto min-w-[100px] px-4 brightness-0 dark:invert opacity-40 hover:opacity-100 transition-opacity duration-300"
+                      alt={`${logo.name}`}
+                    />
+                  ))}
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </section>

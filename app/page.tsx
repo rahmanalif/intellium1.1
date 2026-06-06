@@ -3,7 +3,10 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
-import TechStack from '@/components/TechStack';
+import Process from '@/components/Process';
+import AboutUs from '@/components/AboutUs';
+import ImpactScale from '@/components/ImpactScale';
+import Stack from '@/components/Stack';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import GlobalInspirations from '@/components/GlobalInspirations';
 
@@ -12,13 +15,19 @@ export default function Home() {
     <main className="relative min-h-screen flex flex-col bg-black overflow-x-hidden">
       <Hero />
 
-      <TechStack />
-
       <Services />
 
       <WhyChooseUs />
 
       <GlobalInspirations />
+
+      <Process />
+
+      <AboutUs />
+
+      <ImpactScale />
+
+      <Stack />
     </main>
   );
 }
