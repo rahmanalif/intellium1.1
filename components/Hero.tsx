@@ -1,4 +1,5 @@
 import React from 'react';
+import StyledButton from './StyledButton';
 
 const logos = [
   {
@@ -69,11 +70,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <button className="relative group overflow-hidden rounded-full px-8 py-4 font-bold text-white transition-all hover:scale-105 active:scale-95 w-fit">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600"></div>
-            <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <span className="relative">Get in Touch</span>
-          </button>
+          <StyledButton onClick={() => window.location.href = '/#contact'}>
+            Get in Touch
+          </StyledButton>
         </div>
 
         {/* Right Content - Video */}

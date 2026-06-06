@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import StyledButton from './StyledButton';
 
 const partners = [
   { name: 'Bongo', src: '/vercel.svg' },
@@ -33,19 +34,10 @@ const AboutUs = () => {
           <p className="max-w-[904px] font-[Satoshi,sans-serif] text-base md:text-[20px] leading-[1.4] md:leading-[1.35] text-[#a3a3a3]">
             We solve real problems with hardcore engineering and obsessive design. Reliability and success aren't just goals - it’s our basic target.
           </p>
-          <Link 
-            href="/#contact"
-            className="relative overflow-hidden rounded-full border border-[#1F1FD3] px-8 py-3 font-[Satoshi,sans-serif] text-[14px] font-bold text-white mt-2 md:mt-0 transition-transform hover:scale-105 active:scale-95"
-            style={{ 
-              boxShadow: '0px 4px 20px 0px rgba(145,172,255,0.15)',
-              background: 'radial-gradient(ellipse at center bottom, rgba(76, 76, 227, 1) 0%, rgba(0, 0, 38, 1) 100%)' 
-            }}
-          >
-            <span className="relative z-10 uppercase">START YOUR PROJECT</span>
-            <div 
-              className="absolute inset-0 rounded-full pointer-events-none" 
-              style={{ boxShadow: 'inset 0px 1px 0px 0px rgba(255,255,255,0.4), inset 0px -6px 4px 0px rgba(0,0,0,0.2)' }}
-            ></div>
+          <Link href="/#contact">
+            <StyledButton className="w-fit">
+              START YOUR PROJECT
+            </StyledButton>
           </Link>
         </div>
 

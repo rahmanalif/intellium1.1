@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import StyledButton from './StyledButton';
 
 const techStack = [
   { name: 'Django', color1: '#C6005C', color2: '#59168B', icon: '/vercel.svg' },
@@ -38,13 +39,9 @@ const Stack = () => {
               We leverage an elite toolkit to ensure uncompromising polish and lightning speed.
             </p>
             <div className="flex justify-center lg:justify-start">
-              <button 
-                className="relative w-fit flex items-center justify-center rounded-full border border-[#1F1FD3] px-8 py-3.5 text-sm font-bold text-white shadow-[0px_4px_20px_0px_rgba(145,172,255,0.15)] overflow-hidden font-[Satoshi,sans-serif] transition-transform hover:scale-105 active:scale-95"
-                style={{ background: 'radial-gradient(ellipse at center bottom, rgba(76, 76, 227, 1) 0%, rgba(0, 0, 38, 1) 100%)' }}
-              >
-                <span className="relative z-10">Get a Free Quote</span>
-                <div className="absolute inset-0 pointer-events-none rounded-full shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.4),inset_0px_-6px_4px_0px_rgba(0,0,0,0.2)]"></div>
-              </button>
+              <StyledButton onClick={() => window.location.href = '/#contact'} className="w-fit">
+                Get a Free Quote
+              </StyledButton>
             </div>
           </div>
 
