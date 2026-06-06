@@ -42,17 +42,21 @@ const logos = [
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden flex flex-col min-h-screen">
-      {/* Background Glows */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10">
-        <div className="absolute bg-[#253a7a] blur-[60px] md:blur-[100px] opacity-50 rounded-full w-full max-w-[500px] h-[500px]" style={{ top: '-10%', left: '-10%' }}></div>
-        <div className="absolute bg-[rgba(218,91,211,0.6)] blur-[80px] md:blur-[120px] opacity-60 rounded-full w-full max-w-[400px] h-[400px]" style={{ top: '20%', left: '10%' }}></div>
-        <div className="absolute bg-[#253a7a] blur-[60px] md:blur-[100px] opacity-40 rounded-full w-full max-w-[600px] h-[600px]" style={{ bottom: '10%', right: '-10%' }}></div>
+    <section className="relative w-full overflow-hidden flex flex-col min-h-screen bg-black">
+      {/* Background Glows - Matching Screenshot Aesthetic with very subtle visibility */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Large Left Purple Glow - Minimal Opacity */}
+        <div className="absolute -left-[20%] -top-[10%] h-[120%] w-[80%] rounded-full bg-[#4d07e3] opacity-5 blur-[120px]"></div>
+        <div className="absolute -left-[10%] top-[10%] h-[80%] w-[60%] rounded-full bg-[#9111e6] opacity-5 blur-[100px]"></div>
+        <div className="absolute left-[0%] top-[25%] h-[50%] w-[40%] rounded-full bg-[#7a09c2] opacity-5 blur-[80px]"></div>
+        
+        {/* Subtle Right Dark Accents */}
+        <div className="absolute -right-[10%] -bottom-[10%] h-[60%] w-[40%] rounded-full bg-[#1e3a8a] opacity-[0.03] blur-[140px]"></div>
       </div>
 
-      <div className="container mx-auto px-6 sm:px-12 lg:px-24 flex flex-col lg:flex-row items-center justify-between gap-12 pt-32 flex-grow">
+      <div className="mx-auto flex max-w-[1440px] flex-col lg:flex-row items-center justify-center lg:justify-between px-6 md:px-10 lg:px-[120px] pt-32 lg:pt-40 pb-12 gap-12 lg:gap-0 relative z-10 w-full">
         {/* Left Content */}
-        <div className="flex-1 text-left z-10 flex flex-col gap-10">
+        <div className="flex w-full lg:w-[540px] flex-col gap-6 lg:gap-8 items-center lg:items-start text-center lg:text-left">
           <div className="flex flex-col gap-5">
             <h1 
               className="font-[Satoshi,sans-serif] text-4xl md:text-5xl lg:text-[56px] font-bold leading-[1.15] tracking-[-0.84px] bg-clip-text text-transparent"
@@ -60,7 +64,7 @@ const Hero = () => {
             >
               Digital Identity,<br />Orchestrated
             </h1>
-            <div className="flex flex-col font-[Satoshi,sans-serif] text-lg lg:text-xl max-w-xl">
+            <div className="flex flex-col font-[Satoshi,sans-serif] text-lg lg:text-xl">
               <span 
                 className="bg-clip-text text-transparent leading-[1.35]"
                 style={{ backgroundImage: 'linear-gradient(176deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}
@@ -70,31 +74,40 @@ const Hero = () => {
             </div>
           </div>
 
-          <StyledButton onClick={() => window.location.href = '/#contact'}>
-            Get in Touch
-          </StyledButton>
+          <div className="flex flex-col sm:flex-row items-center lg:justify-start justify-center gap-4 sm:gap-6 mt-2 lg:mt-0">
+            <StyledButton onClick={() => window.location.href = '/#contact'} className="w-full sm:w-auto">
+              Get in Touch
+            </StyledButton>
+          </div>
         </div>
 
-        {/* Right Content - Video */}
-        <div className="flex-1 w-full max-w-[600px] aspect-square relative flex items-center justify-center overflow-hidden">
-          {/* Subtle glow behind video */}
-          <div className="absolute w-[80%] h-[80%] bg-purple-500/10 blur-[80px] rounded-full"></div>
-          
-          <video 
-            className="w-full h-full object-cover mix-blend-screen scale-[1.1] sm:scale-100 relative z-10"
-            autoPlay 
-            loop 
-            muted 
-            playsInline
+        {/* Right Content - Video Container with isolation and radial mask for perfect edge blending */}
+        <div className="relative w-full max-w-[595px] aspect-[595/407] lg:w-[595px] lg:h-[407px] shrink-0 overflow-hidden lg:overflow-visible">
+          <div 
+            className="absolute inset-0 flex items-center justify-center [isolation:isolate]"
+            style={{ maskImage: 'radial-gradient(circle, black 40%, transparent 85%)', WebkitMaskImage: 'radial-gradient(circle, black 40%, transparent 85%)' }}
           >
-            <source src="/hero-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            {/* Subtle glow behind the isolated blending layer */}
+            <div className="absolute inset-0 bg-[#3150aa]/5 blur-[100px] rounded-full -z-10"></div>
+            
+            <div className="relative w-full h-full mix-blend-screen">
+              <video 
+                className="absolute inset-0 h-full w-full object-cover scale-[1.1] sm:scale-100"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Logo Cloud Section at the Bottom */}
-      <div className="w-full pb-16 pt-8 z-10">
+      <div className="w-full pb-16 pt-8 z-10 mt-auto">
         <div className="mx-auto w-full px-4 md:px-8">
           <div
             className="group relative flex gap-6 overflow-hidden p-2"
