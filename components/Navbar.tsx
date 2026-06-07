@@ -9,11 +9,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'About', href: '/about' },
-    { label: 'Blogs', href: '/blogs' },
-    { label: 'Career', href: '/career' },
+    { label: 'Home', href: '/#' },
+    { label: 'Services', href: '/#services' },
+    { label: 'About', href: '/#about' },
+    { label: 'Blogs', href: '/#blogs' },
+    { label: 'Career', href: '/#career' },
   ];
 
   return (

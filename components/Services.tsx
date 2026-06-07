@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Services = () => {
   return (
@@ -69,8 +70,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="relative mt-auto w-full h-[200px] md:h-[250px] xl:h-[350px]">
-                {/* Placeholder for Design Image */}
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
+                <Image src="/uiux.webp" alt="UI/UX Design" fill className="object-cover" />
               </div>
             </div>
 
@@ -79,7 +79,7 @@ const Services = () => {
               <div className="absolute bg-[rgba(73,77,147,0.6)] blur-[60px] -bottom-20 left-1/2 -translate-x-1/2 rounded-full w-80 h-80 pointer-events-none"></div>
               <div className="absolute bg-[rgba(218,91,211,0.6)] blur-2xl top-[40%] -right-10 w-40 h-40 opacity-20 pointer-events-none"></div>
               <div className="relative w-full h-[200px] xl:h-[340px] overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/20 to-transparent"></div>
+                <Image src="/appdevelopment.webp" alt="App Development" fill className="object-cover" />
               </div>
               <div className="relative z-10 flex flex-col gap-4 p-8 xl:p-10 mt-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code h-6 w-6 text-white/70" aria-hidden="true">
@@ -96,8 +96,12 @@ const Services = () => {
             </div>
 
             {/* Logo / Branding Placeholder */}
-            <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 group">
-              <div className="text-white/20 text-4xl font-bold italic tracking-tighter">INTELLIUM</div>
+            <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 group bg-[#080a11]">
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#253a7a]/20 to-[#da5bd3]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute h-32 w-32 rounded-full bg-[#da5bd3]/20 blur-[60px] animate-pulse"></div>
+              <div className="relative z-10 text-white/10 text-5xl font-black italic tracking-tighter transition-all duration-700 group-hover:text-white/30 group-hover:scale-110">
+                INTELLIUM
+              </div>
             </div>
 
             {/* Digital Marketing */}
@@ -119,7 +123,7 @@ const Services = () => {
                 </p>
               </div>
               <div className="relative w-full h-[250px] sm:h-full sm:w-1/2 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-l from-blue-900/20 to-transparent"></div>
+                <Image src="/digitalmarketing.webp" alt="Digital Marketing" fill className="object-cover" />
               </div>
             </div>
 

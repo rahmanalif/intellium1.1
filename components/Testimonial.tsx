@@ -15,18 +15,13 @@ const Testimonial = () => {
         <div className="relative flex w-full flex-col items-center">
           <div className="flex flex-col items-center gap-8 md:gap-12.5 w-full">
             {/* Quote Icon */}
-            <div className="flex h-16 w-16 md:h-20.5 md:w-20.5 items-center justify-center shrink-0">
-              <svg 
-                width="82" 
-                height="82" 
-                viewBox="0 0 82 82" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-full object-contain text-[#cb57dd] opacity-50"
-              >
-                <path d="M20.5 30.75H10.25V20.5H20.5V30.75ZM20.5 51.25H10.25V41H20.5V51.25ZM41 30.75H30.75V20.5H41V30.75ZM41 51.25H30.75V41H41V51.25Z" fill="currentColor"/>
-                <path d="M51.25 20.5H71.75V41H61.5V71.75H41V41H51.25V20.5ZM10.25 20.5H30.75V41H20.5V71.75H0V41H10.25V20.5Z" fill="currentColor"/>
-              </svg>
+            <div className="relative h-16 w-16 md:h-20.5 md:w-20.5 shrink-0">
+              <Image 
+                src="/svg/qoute.084ec6knl-k~z.svg" 
+                alt="Quote Icon" 
+                fill 
+                className="object-contain opacity-50"
+              />
             </div>
 
             <div className="flex flex-col items-center gap-6 md:gap-8 w-full">
@@ -38,12 +33,17 @@ const Testimonial = () => {
               </p>
 
               <div className="flex items-center gap-3 md:gap-4 mt-2">
-                <div className="h-10 w-10 md:h-12.5 md:w-12.5 overflow-hidden rounded-full shrink-0 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">SM</span>
+                <div className="relative h-10 w-10 md:h-12.5 md:w-12.5 overflow-hidden rounded-full shrink-0">
+                  <Image 
+                    src="/dua.webp" 
+                    alt="Dua Lipa" 
+                    fill 
+                    className="object-cover"
+                  />
                 </div>
                 <div className="flex flex-col gap-0.5 text-white">
-                  <span className="font-[Satoshi,sans-serif] text-sm md:text-base font-bold">— Sarah Mitchell</span>
-                  <span className="font-[Satoshi,sans-serif] text-xs md:text-sm opacity-80">Marketing Consultant</span>
+                  <span className="font-[Satoshi,sans-serif] text-sm md:text-base font-bold">— Dua Lipa</span>
+                  <span className="font-[Satoshi,sans-serif] text-xs md:text-sm opacity-80">Singer</span>
                 </div>
               </div>
             </div>

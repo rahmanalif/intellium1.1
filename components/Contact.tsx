@@ -21,8 +21,8 @@ const Contact = () => {
             
             <div className="relative overflow-hidden rounded-2xl text-white min-h-[240px] xl:min-h-[300px] flex flex-col justify-end flex-1">
               <Image 
-                src="/image (1).webp" 
-                alt="Testimonial background" 
+                src="/contact.webp" 
+                alt="Contact visual" 
                 fill 
                 className="object-cover"
               />
@@ -38,8 +38,8 @@ const Contact = () => {
           <div className="flex flex-col gap-4 flex-1">
             <div className="relative overflow-hidden rounded-2xl text-white min-h-[320px] xl:min-h-[400px] flex flex-col justify-end flex-1">
               <Image 
-                src="/image.webp" 
-                alt="Testimonial background" 
+                src="/contact2.webp" 
+                alt="Collaboration visual" 
                 fill 
                 className="object-cover"
               />

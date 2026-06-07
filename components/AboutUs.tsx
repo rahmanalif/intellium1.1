@@ -4,23 +4,23 @@ import Link from 'next/link';
 import StyledButton from './StyledButton';
 
 const partners = [
-  { name: 'Bongo', src: '/vercel.svg' },
-  { name: 'Praava', src: '/next.svg' },
-  { name: 'Gozayaan', src: '/globe.svg' },
-  { name: 'Wire', src: '/window.svg' },
-  { name: 'Fashol', src: '/file.svg' },
-  { name: 'Pickaboo', src: '/vercel.svg' },
-  { name: 'Ayykor', src: '/next.svg' },
-  { name: 'Audacity', src: '/globe.svg' },
-  { name: 'Anwar', src: '/window.svg' },
-  { name: 'Wegro', src: '/file.svg' },
-  { name: 'PriyoShop', src: '/vercel.svg' },
-  { name: 'Singularity', src: '/next.svg' },
+  { name: 'Bongo', src: 'https://scalecraftit.com/_next/static/media/bongo.147xbw9-a2kl5.svg' },
+  { name: 'Praava', src: 'https://scalecraftit.com/_next/static/media/praava.0o~wp51~_h36b.svg' },
+  { name: 'Gozayaan', src: 'https://scalecraftit.com/_next/static/media/gozayaan.0vj-w5znr~-1s.svg' },
+  { name: 'Wire', src: 'https://scalecraftit.com/_next/static/media/wire.0uki06bdc~0p2.svg' },
+  { name: 'Fashol', src: 'https://scalecraftit.com/_next/static/media/fashol.03fncx4k4.-~y.svg' },
+  { name: 'Pickaboo', src: 'https://scalecraftit.com/_next/static/media/pickaboo.08vus.yz7a3ye.svg' },
+  { name: 'Ayykor', src: 'https://scalecraftit.com/_next/static/media/ayykor.07h56rf-n8wel.svg' },
+  { name: 'Audacity', src: 'https://scalecraftit.com/_next/static/media/audacity.0qmlil4.z03t0.svg' },
+  { name: 'Anwar', src: 'https://scalecraftit.com/_next/static/media/anwar.0l-fmv2trjze_.svg' },
+  { name: 'Wegro', src: 'https://scalecraftit.com/_next/static/media/wegro.0s4bpw_wh3z~8.svg' },
+  { name: 'PriyoShop', src: 'https://scalecraftit.com/_next/static/media/priyoShop.0betnktxow~y4.svg' },
+  { name: 'Singularity', src: 'https://scalecraftit.com/_next/static/media/singularity.035k915rf2xa3.svg' },
 ];
 
 const AboutUs = () => {
   return (
-    <section className="relative w-full overflow-hidden py-16 md:py-25 bg-black">
+    <section id="about" className="relative w-full overflow-hidden py-16 md:py-25 bg-black">
       <div className="relative z-10 mx-auto max-w-[1440px] px-6 md:px-10 lg:px-[120px]">
         
         {/* Header */}
@@ -57,17 +57,13 @@ const AboutUs = () => {
                     key={index}
                     className="flex h-6 md:h-8.25 items-center justify-center transform hover:scale-110 transition-all duration-300"
                   >
-                    <div className="relative w-20 md:w-24 h-full flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
-                      {/* Using text label + small icon since exact SVGs are missing */}
-                      <span className="font-[Satoshi,sans-serif] text-[10px] md:text-[12px] font-bold text-zinc-500 uppercase tracking-tighter mr-1">
-                        {partner.name}
-                      </span>
+                    <div className="relative h-full flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
                       <Image 
                         alt={partner.name} 
                         src={partner.src} 
-                        width={20} 
-                        height={20} 
-                        className="object-contain"
+                        width={100} 
+                        height={32} 
+                        className="h-full w-auto max-w-[80px] md:max-w-[100px] object-contain"
                       />
                     </div>
                   </div>
@@ -96,7 +92,7 @@ const AboutUs = () => {
           <div className="hidden lg:block relative w-[504px] shrink-0 aspect-[4/3] rounded-xl overflow-hidden self-center border border-white/5">
             <Image 
               alt="About Us" 
-              src="/image.webp" 
+              src="https://scalecraftit.com/_next/static/media/about.0j79dkyw3p9fy.webp" 
               fill
               className="object-cover object-center"
             />

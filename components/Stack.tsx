@@ -3,18 +3,18 @@ import Image from 'next/image';
 import StyledButton from './StyledButton';
 
 const techStack = [
-  { name: 'Django', color1: '#C6005C', color2: '#59168B', icon: '/vercel.svg' },
-  { name: 'AWS', color1: '#CA3500', color2: '#894B00', icon: '/globe.svg' },
-  { name: 'Figma', color1: '#005F78', color2: '#1447E6', icon: '/window.svg' },
-  { name: 'React', color1: '#0B4F4A', color2: '#007595', icon: '/vercel.svg' },
-  { name: 'Python', color1: '#022F2E', color2: '#006045', icon: '/file.svg' },
-  { name: 'Vercel', color1: '#C6005C', color2: '#6E11B0', icon: '/vercel.svg' },
-  { name: 'Next.js', color1: '#7008E7', color2: '#59168B', icon: '/next.svg' },
-  { name: 'Notion', color1: '#9F0712', color2: '#441306', icon: '/file.svg' },
-  { name: 'After Effects', color1: '#9F2D00', color2: '#BB4D00', icon: '/window.svg' },
-  { name: 'Spline', color1: '#005F5A', color2: '#354794', icon: '/globe.svg' },
-  { name: 'Creative Cloud', color1: '#733E0A', color2: '#9F2D00', icon: '/file.svg' },
-  { name: 'Blender', color1: '#8200DB', color2: '#312C85', icon: '/globe.svg' },
+  { name: 'Django', color1: '#C6005C', color2: '#59168B', icon: 'https://scalecraftit.com/_next/static/media/django.0qhac11xc8ryd.svg' },
+  { name: 'AWS', color1: '#CA3500', color2: '#894B00', icon: 'https://scalecraftit.com/_next/static/media/aws.0~jzo609l67ll.svg' },
+  { name: 'Figma', color1: '#005F78', color2: '#1447E6', icon: 'https://scalecraftit.com/_next/static/media/figma.15377v5v7vcex.svg' },
+  { name: 'React', color1: '#0B4F4A', color2: '#007595', icon: 'https://scalecraftit.com/_next/static/media/react.0pdw_kmqt8ett.svg' },
+  { name: 'Python', color1: '#022F2E', color2: '#006045', icon: 'https://scalecraftit.com/_next/static/media/python.0u..zcyvqt9tn.svg' },
+  { name: 'Vercel', color1: '#C6005C', color2: '#6E11B0', icon: 'https://scalecraftit.com/_next/static/media/vercel.0jtcy1i9jw83v.svg' },
+  { name: 'Next.js', color1: '#7008E7', color2: '#59168B', icon: 'https://scalecraftit.com/_next/static/media/nextjs.0gu1~_.h~_23r.svg' },
+  { name: 'Notion', color1: '#9F0712', color2: '#441306', icon: 'https://scalecraftit.com/_next/static/media/notion.07.m3~o61j-dd.svg' },
+  { name: 'After Effects', color1: '#9F2D00', color2: '#BB4D00', icon: 'https://scalecraftit.com/_next/static/media/adobe-after-effects.01819n.k8xq__.svg' },
+  { name: 'Spline', color1: '#005F5A', color2: '#354794', icon: 'https://scalecraftit.com/_next/static/media/spline.0kvhnflp72fx..svg' },
+  { name: 'Creative Cloud', color1: '#733E0A', color2: '#9F2D00', icon: 'https://scalecraftit.com/_next/static/media/adobe-creative-cloude.04at1.hjqopni.svg' },
+  { name: 'Blender', color1: '#8200DB', color2: '#312C85', icon: 'https://scalecraftit.com/_next/static/media/blender.0_a82q0xija2x.svg' },
 ];
 
 const Stack = () => {
@@ -58,17 +58,14 @@ const Stack = () => {
                   <div className="absolute -right-3 -top-14 h-34 w-34 rounded-full opacity-50 blur-[30px] group-hover:opacity-80 transition-opacity" style={{ backgroundColor: tech.color2 }}></div>
                   
                   {/* Tech Icon Content */}
-                  <div className="relative z-10 flex flex-col items-center justify-center gap-1 w-full h-full p-4 transition-transform duration-500 group-hover:scale-110">
+                  <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-500 group-hover:scale-110">
                     <Image 
                       alt={tech.name} 
                       src={tech.icon}
                       width={32}
                       height={32}
-                      className="max-w-[70%] max-h-[70%] object-contain brightness-0 invert opacity-80"
+                      className="max-w-[70%] max-h-[70%] object-contain opacity-90"
                     />
-                    <span className="text-[9px] font-bold text-white/40 uppercase tracking-tighter group-hover:text-white/100 transition-colors">
-                      {tech.name}
-                    </span>
                   </div>
                 </div>
               ))}
