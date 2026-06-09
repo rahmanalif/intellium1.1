@@ -28,7 +28,7 @@ const Contact = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               <div className="relative z-10 p-5">
-                <p className="text-xs font-[Satoshi,sans-serif]">Intellium has been instrumental in helping us build our team from scratch.</p>
+                <p className="text-xs font-[Satoshi,sans-serif]">Gridmaps has been instrumental in helping us build our team from scratch.</p>
                 <p className="mt-2 text-sm font-bold font-[Satoshi,sans-serif]">• Brooklyn Lean</p>
                 <p className="text-[10px] xl:text-xs opacity-60 font-[Satoshi,sans-serif]">Software Engineer</p>
               </div>
@@ -45,7 +45,7 @@ const Contact = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               <div className="relative z-10 p-5">
-                <p className="text-xs font-[Satoshi,sans-serif]">Intellium has been instrumental in helping us build our team.</p>
+                <p className="text-xs font-[Satoshi,sans-serif]">Gridmaps has been instrumental in helping us build our team.</p>
                 <p className="mt-2 text-sm font-bold font-[Satoshi,sans-serif]">• Brooklyn Lean</p>
                 <p className="text-[10px] xl:text-xs opacity-60 font-[Satoshi,sans-serif]">Software Engineer</p>
               </div>

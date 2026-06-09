@@ -10,14 +10,14 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'Home', href: '/#' },
-    { label: 'Services', href: '/#services' },
+    { label: 'Services', href: '/services' },
     { label: 'About', href: '/#about' },
-    { label: 'Blogs', href: '/#blogs' },
+    // { label: 'Blogs', href: '/#blogs' },
     { label: 'Career', href: '/#career' },
   ];
 
   return (
-    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 ">
       <div 
         className="bg-white/10 backdrop-blur-2xl shadow-xl shadow-black/10 border border-white/20 rounded-full px-6 py-3 transition-all duration-500 w-fit"
         style={{ backdropFilter: 'blur(20px) saturate(180%)' }}

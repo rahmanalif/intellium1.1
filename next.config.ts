@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: 'scalecraftit.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'brainstation-23.com',
+        pathname: '/**',
+      },
     ],
   },
 };

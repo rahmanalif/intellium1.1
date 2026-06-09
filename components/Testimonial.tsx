@@ -29,7 +29,7 @@ const Testimonial = () => {
                 className="w-full max-w-[870px] text-center font-[Satoshi,sans-serif] text-[20px] sm:text-[24px] md:text-[32px] font-bold bg-clip-text text-transparent leading-relaxed md:leading-snug" 
                 style={{ backgroundImage: 'linear-gradient(169deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}
               >
-                “Intellium has taken our team to total transformation. The AI-powered insights have already saved us dozens of hours weekly. Simplicity at its most powerful. Highly recommended.”
+                “Gridmaps has taken our team to total transformation. The AI-powered insights have already saved us dozens of hours weekly. Simplicity at its most powerful. Highly recommended.”
               </p>
 
               <div className="flex items-center gap-3 md:gap-4 mt-2">

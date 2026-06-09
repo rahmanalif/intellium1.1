@@ -16,7 +16,7 @@ const Footer = () => {
                     <path d="M2 12L12 17L22 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <span className="text-xl md:text-2xl font-bold text-white tracking-tight font-[Satoshi,sans-serif]">Intellium</span>
+                <span className="text-xl md:text-2xl font-bold text-white tracking-tight font-[Satoshi,sans-serif]">Gridmaps</span>
               </div>
             </Link>
             <p className="max-w-[300px] font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] leading-relaxed">
@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="mt-12 md:mt-16 flex flex-col md:flex-row items-center justify-between border-t border-white/5 pt-8 gap-4 md:gap-0">
           <span className="font-[Satoshi,sans-serif] text-xs text-[#525252] text-center md:text-left">
-            © 2026 Intellium. All rights reserved.
+            © 2026 Gridmaps. All rights reserved.
           </span>
           <div className="flex flex-wrap justify-center items-center gap-6">
             <Link className="font-[Satoshi,sans-serif] text-xs text-[#525252] hover:text-white transition-colors" href="#">Privacy Policy</Link>

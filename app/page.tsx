@@ -18,7 +18,7 @@ export default function Home() {
     <main className="relative min-h-screen flex flex-col bg-black overflow-x-hidden">
       <Hero />
 
-      <Services />
+      <Services variant="home" />
 
       <WhyChooseUs />
 
