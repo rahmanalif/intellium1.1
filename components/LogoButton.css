@@ -176,6 +176,12 @@
   }
 }
 
+/* Logo image styling */
+.logo-button-container .button .logo-img {
+  position: relative;
+  z-index: 10;
+}
+
 /* Text styling with shimmering gradient effect */
 .logo-button-container .button .text_button {
   position: relative;

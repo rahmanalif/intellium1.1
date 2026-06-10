@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -8,14 +9,14 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-0">
           <div className="flex flex-col gap-6">
             <Link className="flex items-center gap-2" href="/">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white"/>
-                    <path d="M2 17L12 22L22 17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M2 12L12 17L22 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
+              <div className="flex items-center gap-3">
+                <Image 
+                  src="/logo/image.png" 
+                  alt="Gridmaps Logo" 
+                  width={32} 
+                  height={32} 
+                  className="w-7 h-7 md:w-8 md:h-8 object-contain"
+                />
                 <span className="text-xl md:text-2xl font-bold text-white tracking-tight font-[Satoshi,sans-serif]">Gridmaps</span>
               </div>
             </Link>

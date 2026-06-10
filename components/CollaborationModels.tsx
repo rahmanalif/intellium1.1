@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 
 const models = [
   {
@@ -106,15 +104,6 @@ const CollaborationModels = () => {
                     {model.description}
                   </p>
                 </div>
-                <Link 
-                  href={model.href}
-                  className="flex items-center gap-3 text-[#4992C1] font-bold text-base hover:text-white transition-all duration-300 group/link"
-                >
-                  <span className="uppercase tracking-[0.2em] text-xs">Learn More</span>
-                  <div className="w-9 h-9 rounded-full border border-[#4992C1]/30 flex items-center justify-center transition-all duration-300 group-hover/link:bg-[#4992C1] group-hover/link:text-black">
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
-                </Link>
               </div>
             ))}
           </div>
@@ -134,15 +123,6 @@ const CollaborationModels = () => {
                     {model.description}
                   </p>
                 </div>
-                <Link 
-                  href={model.href}
-                  className="flex items-center gap-3 text-[#4992C1] font-bold text-base hover:text-white transition-all duration-300 group/link"
-                >
-                  <span className="uppercase tracking-[0.2em] text-xs">Learn More</span>
-                  <div className="w-9 h-9 rounded-full border border-[#4992C1]/30 flex items-center justify-center transition-all duration-300 group-hover/link:bg-[#4992C1] group-hover/link:text-black">
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
-                </Link>
               </div>
             ))}
           </div>

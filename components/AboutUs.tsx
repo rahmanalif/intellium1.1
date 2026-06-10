@@ -34,11 +34,34 @@ const AboutUs = () => {
           <p className="max-w-[904px] font-[Satoshi,sans-serif] text-base md:text-[20px] leading-[1.4] md:leading-[1.35] text-[#a3a3a3]">
             We solve real problems with hardcore engineering and obsessive design. Reliability and success aren't just goals - it’s our basic target.
           </p>
-          <Link href="/#contact">
-            <StyledButton className="w-fit">
-              START YOUR PROJECT
-            </StyledButton>
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <Link href="/#contact">
+              <StyledButton className="w-fit">
+                START YOUR PROJECT
+              </StyledButton>
+            </Link>
+            <Link
+              href="/about"
+              className="group inline-flex items-center gap-2 font-[Satoshi,sans-serif] text-sm font-semibold text-white/70 hover:text-white transition-colors duration-200 px-6 py-3 rounded-full border border-white/10 hover:border-white/25 hover:bg-white/5"
+            >
+              SEE MORE
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform duration-200 group-hover:translate-x-0.5"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
         {/* Content Content */}
@@ -91,8 +114,8 @@ const AboutUs = () => {
           {/* Right Column - Image */}
           <div className="hidden lg:block relative w-[504px] shrink-0 aspect-[4/3] rounded-xl overflow-hidden self-center border border-white/5">
             <Image 
-              alt="About Us" 
-              src="https://scalecraftit.com/_next/static/media/about.0j79dkyw3p9fy.webp" 
+              alt="Our Team" 
+              src="/team.jpg" 
               fill
               className="object-cover object-center"
             />

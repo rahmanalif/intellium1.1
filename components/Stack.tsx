@@ -58,14 +58,17 @@ const Stack = () => {
                   <div className="absolute -right-3 -top-14 h-34 w-34 rounded-full opacity-50 blur-[30px] group-hover:opacity-80 transition-opacity" style={{ backgroundColor: tech.color2 }}></div>
                   
                   {/* Tech Icon Content */}
-                  <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-4 transition-transform duration-500 group-hover:scale-110">
+                  <div className="relative z-10 flex flex-col items-center justify-center w-full h-full gap-2 p-2 transition-transform duration-500 group-hover:scale-105">
                     <Image 
                       alt={tech.name} 
                       src={tech.icon}
-                      width={32}
-                      height={32}
-                      className="max-w-[70%] max-h-[70%] object-contain opacity-90"
+                      width={28}
+                      height={28}
+                      className="object-contain opacity-90"
                     />
+                    <span className="font-[Satoshi,sans-serif] text-[10px] md:text-xs font-bold text-white/50 group-hover:text-white/90 transition-colors tracking-wider uppercase text-center">
+                      {tech.name}
+                    </span>
                   </div>
                 </div>
               ))}

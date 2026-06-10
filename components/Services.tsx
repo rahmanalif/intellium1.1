@@ -103,11 +103,26 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 </div>
 
                 {/* Logo / Branding Placeholder */}
-                <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 group bg-[#080a11]">
+                <div className="hidden relative lg:flex flex-col items-center justify-between p-10 overflow-hidden rounded-2xl border border-[#525252] min-h-[350px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 group bg-[#080a11]">
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#253a7a]/20 to-[#da5bd3]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  <div className="absolute h-32 w-32 rounded-full bg-[#da5bd3]/20 blur-[60px] animate-pulse"></div>
-                  <div className="relative z-10 text-white/10 text-5xl font-black italic tracking-tighter transition-all duration-700 group-hover:text-white/30 group-hover:scale-110">
-                    Gridmaps
+                  
+                  {/* Large Centered Logo */}
+                  <div className="flex-1 flex items-center justify-center relative w-full">
+                    <div className="absolute h-40 w-40 rounded-full bg-[#da5bd3]/10 blur-[60px] animate-pulse"></div>
+                    <Image 
+                      src="/logo/image.png" 
+                      alt="Gridmaps Logo" 
+                      width={160} 
+                      height={160} 
+                      className="relative z-10 object-contain opacity-40 group-hover:opacity-80 transition-all duration-700 group-hover:scale-110"
+                    />
+                  </div>
+
+                  {/* Text at the bottom */}
+                  <div className="relative z-10 transition-all duration-700">
+                    <span className="text-white/20 text-2xl font-black italic tracking-tighter group-hover:text-white/40">
+                      Gridmaps
+                    </span>
                   </div>
                 </div>
 
