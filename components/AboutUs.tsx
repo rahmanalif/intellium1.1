@@ -115,7 +115,7 @@ const AboutUs = () => {
           <div className="hidden lg:block relative w-[504px] shrink-0 aspect-[4/3] rounded-xl overflow-hidden self-center border border-white/5">
             <Image 
               alt="Our Team" 
-              src="/team.jpg" 
+              src="/Team.jpg" 
               fill
               className="object-cover object-center"
             />

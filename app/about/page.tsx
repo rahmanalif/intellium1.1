@@ -243,7 +243,7 @@ export default function AboutPage() {
             <div className="relative w-full lg:w-[480px] shrink-0 aspect-[4/3] rounded-2xl overflow-hidden border border-white/5">
               <Image
                 alt="Our Team"
-                src="/team.jpg"
+                src="/Team.jpg"
                 fill
                 className="object-cover object-center"
               />
