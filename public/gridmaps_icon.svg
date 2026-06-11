@@ -1,0 +1,47 @@
+<svg width="132" height="132" viewBox="0 0 132 132" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>GridMaps icon</title>
+  <rect width="132" height="132" rx="22" fill="#0B0E1C"/>
+  <g transform="translate(15,15) scale(1.00000)">
+      <g fill="#FFFFFF" fill-opacity="0.07">
+        <rect x="0" y="0" width="30" height="30" rx="5"/>
+        <rect x="36" y="0" width="30" height="30" rx="5"/>
+        <rect x="72" y="0" width="30" height="30" rx="5"/>
+        <rect x="0" y="36" width="30" height="30" rx="5"/>
+        <rect x="36" y="36" width="30" height="30" rx="5"/>
+        <rect x="72" y="36" width="30" height="30" rx="5"/>
+        <rect x="0" y="72" width="30" height="30" rx="5"/>
+        <rect x="36" y="72" width="30" height="30" rx="5"/>
+        <rect x="72" y="72" width="30" height="30" rx="5"/>
+      </g>
+      <g fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 9 L57 9 L63 15 L66 15"/>
+        <path d="M72 15 L102 15"/>
+        <path d="M88 0 L88 13 L81 20 L81 30"/>
+        <path d="M81 36 L81 66"/>
+        <path d="M9 40 L9 57 L15 63 L15 66"/>
+        <path d="M15 72 L15 102"/>
+        <path d="M0 48 L19 48 L25 53 L30 53"/>
+        <path d="M0 84 L21 84 L27 90 L30 90"/>
+        <path d="M36 90 L66 90"/>
+        <path d="M50 72 L50 83 L57 89 L57 102"/>
+        <path d="M102 47 L81 47 L81 58 L72 58"/>
+        <path d="M61 24 L61 30"/>
+      </g>
+      <g fill="#FFFFFF" fill-opacity="0.32">
+        <circle cx="40" cy="9" r="1.5"/>
+        <circle cx="94" cy="15" r="1.5"/>
+        <circle cx="9" cy="40" r="1.5"/>
+        <circle cx="15" cy="96" r="1.5"/>
+        <circle cx="81" cy="40" r="1.5"/>
+        <circle cx="57" cy="95" r="1.5"/>
+      </g>
+      <g fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="1">
+        <circle cx="19" cy="48" r="2.2"/>
+        <circle cx="88" cy="4" r="2.2"/>
+        <circle cx="27" cy="90" r="2.2"/>
+      </g>
+      <rect x="0" y="0" width="30" height="30" rx="5" fill="#FFFFFF"/>
+      <rect x="36" y="36" width="30" height="30" rx="5" fill="#3A6FFF"/>
+      <rect x="72" y="72" width="30" height="30" rx="5" fill="#00BA84"/>
+  </g>
+</svg>

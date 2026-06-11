@@ -17,44 +17,41 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 ">
-      <div 
-        className="bg-white/10 backdrop-blur-2xl shadow-xl shadow-black/10 border border-white/20 rounded-full px-6 py-3 transition-all duration-500 w-fit"
-        style={{ backdropFilter: 'blur(20px) saturate(180%)' }}
+    <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+      <nav 
+        className="flex items-center justify-between md:justify-center w-full md:w-auto gap-4 md:gap-8 rounded-[32px] border border-[#404040] bg-white/5 px-2.5 py-2.5 md:pr-6 shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_8px_10px_0px_rgba(0,0,0,0.1)] transition-all duration-300"
+        style={{ backdropFilter: 'blur(8px)' }}
       >
-        <div className="flex items-center justify-between gap-8">
-          {/* Logo Section */}
-          <Link href="/" className="flex-shrink-0 transition-colors">
-            <LogoButton />
-          </Link>
-
-          {/* Links Section - Kept relative/flex for compact fit instead of absolute center */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) => (
-              <Link 
-                key={link.label}
-                href={link.href} 
-                className="relative text-white/70 hover:text-white transition-all cursor-pointer px-4 py-2 rounded-full font-medium text-sm group"
-              >
-                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-white/10 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ boxShadow: 'rgba(255, 255, 255, 0.2) 0px 1px 1px inset' }}></span>
-                <span className="relative z-10">{link.label}</span>
-              </Link>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="inline-flex items-center justify-center p-2 rounded-full text-white/70 hover:text-white hover:bg-white/20 md:hidden transition-all focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <Menu className="w-5 h-5" />
-          </button>
+        {/* Logo Section */}
+        <div className="flex-shrink-0">
+          <LogoButton />
         </div>
 
-        {/* Mobile Menu Dropdown */}
+        {/* Links Section */}
+        <div className="hidden md:flex items-center gap-6">
+          {navLinks.map((link) => (
+            <Link 
+              key={link.label}
+              href={link.href} 
+              className="font-[Satoshi,sans-serif] text-base font-medium text-[#a3a3a3] transition-colors hover:text-white"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden flex items-center justify-center p-2 text-white mr-1 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <Menu className="w-6 h-6" />
+        </button>
+
+        {/* Mobile Menu Dropdown (Logic retained from original) */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 flex flex-col gap-2 pb-2 min-w-[200px]">
+          <div className="absolute top-full left-0 right-0 mt-4 md:hidden bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl p-4 flex flex-col gap-2 shadow-2xl">
             {navLinks.map((link) => (
               <Link 
                 key={link.label}
@@ -67,7 +64,7 @@ const Navbar = () => {
             ))}
           </div>
         )}
-      </div>
+      </nav>
     </div>
   );
 };

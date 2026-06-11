@@ -126,7 +126,6 @@ const team = [
 export default function AboutPage() {
   return (
     <main className="relative min-h-screen flex flex-col bg-black overflow-x-hidden">
-      <Navbar />
 
       {/* ── Hero ── */}
       <section className="relative w-full overflow-hidden pt-40 pb-20 md:pt-48 md:pb-28">

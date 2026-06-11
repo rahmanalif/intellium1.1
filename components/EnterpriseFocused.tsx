@@ -72,10 +72,10 @@ const enterpriseServices = [
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
         <path d="M21.8398 16C30.6764 16 37.8398 13.3137 37.8398 10C37.8398 6.68629 30.6764 4 21.8398 4C13.0033 4 5.83984 6.68629 5.83984 10C5.83984 13.3137 13.0033 16 21.8398 16Z" stroke="currentColor" strokeWidth="2.5"></path>
-        <path d="M11.8398 21.6836C13.043 22.0452 14.3885 22.3432 15.8398 22.5634" stroke="currentColor" strokeWidth="2.5" stroke-linecap="round"></path>
-        <path d="M21.8398 30C13.0033 30 5.83984 27.3138 5.83984 24" stroke="currentColor" strokeWidth="2.5" stroke-linecap="round"></path>
-        <path d="M11.8398 35.6836C13.043 36.0452 14.3885 36.3432 15.8398 36.5634" stroke="currentColor" strokeWidth="2.5" stroke-linecap="round"></path>
-        <path d="M21.8398 44C13.0033 44 5.83984 41.3138 5.83984 38V10M37.8398 10V24" stroke="currentColor" strokeWidth="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.8398 21.6836C13.043 22.0452 14.3885 22.3432 15.8398 22.5634" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"></path>
+        <path d="M21.8398 30C13.0033 30 5.83984 27.3138 5.83984 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"></path>
+        <path d="M11.8398 35.6836C13.043 36.0452 14.3885 36.3432 15.8398 36.5634" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"></path>
+        <path d="M21.8398 44C13.0033 44 5.83984 41.3138 5.83984 38V10M37.8398 10V24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"></path>
         <path d="M37.8398 33.347L35.4914 30.3738C34.2414 28.7912 33.6164 28 32.8398 28C32.0632 28 31.4382 28.7912 30.1882 30.3738L27.8398 33.347M32.8398 28.1744V44" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"></path>
       </svg>
     )

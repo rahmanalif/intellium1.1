@@ -39,8 +39,8 @@ const Stack = () => {
               We leverage an elite toolkit to ensure uncompromising polish and lightning speed.
             </p>
             <div className="flex justify-center lg:justify-start">
-              <StyledButton onClick={() => window.location.href = '/#contact'} className="w-fit">
-                Get a Free Quote
+              <StyledButton href="/#contact" className="w-fit">
+                Get Started
               </StyledButton>
             </div>
           </div>

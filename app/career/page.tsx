@@ -45,7 +45,6 @@ const jobs = [
 export default function CareerPage() {
   return (
     <main className="relative min-h-screen flex flex-col bg-black overflow-x-hidden">
-      <Navbar />
 
       {/* ── Hero Section ── */}
       <section className="relative w-full overflow-hidden pt-40 pb-20 md:pt-48 md:pb-28">
@@ -139,12 +138,10 @@ export default function CareerPage() {
 
                 {/* Action */}
                 <div className="mt-8 md:mt-0">
-                  <Link href={`mailto:careers@gridmaps.com?subject=Application for ${job.title}`}>
-                    <button className="flex items-center gap-3 px-6 py-3 rounded-full bg-white text-black font-bold text-sm hover:bg-[#4992C1] hover:text-white transition-all duration-300">
-                      APPLY NOW
-                      <ArrowUpRight className="w-4 h-4" />
-                    </button>
-                  </Link>
+                  <StyledButton href={`mailto:careers@gridmaps.com?subject=Application for ${job.title}`}>
+                    APPLY NOW
+                    <ArrowUpRight className="w-4 h-4" />
+                  </StyledButton>
                 </div>
               </div>
             ))}

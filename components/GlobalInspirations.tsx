@@ -65,9 +65,7 @@ const GlobalInspirations = () => {
                         <Image 
                           alt={item.title} 
                           src={item.image} 
-                          fill 
-                          className="object-cover transition-transform duration-700 group-hover/card:scale-105"
-                        />
+                          fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-700 group-hover/card:scale-105" />
                       </div>
 
                       {/* Content Area */}

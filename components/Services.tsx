@@ -49,19 +49,27 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                     <h3 className="font-[Satoshi,sans-serif] text-2xl md:text-[32px] font-bold bg-clip-text text-transparent leading-tight" style={{ backgroundImage: 'linear-gradient(171deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
                       Web Development
                     </h3>
-                    <p className="font-[Satoshi,sans-serif] text-sm md:text-base bg-clip-text text-transparent leading-relaxed" style={{ backgroundImage: 'linear-gradient(168deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
-                      Concepts transformed into high-velocity experiences. We engineer story-driven sites and premium products that never lag.
+                    <p className="font-[Satoshi,sans-serif] text-sm md:text-base bg-clip-text text-transparent leading-relaxed" style={{ backgroundImage: 'linear-gradient(172deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
+                      High-performance, scalable web solutions engineered for speed and authority. We build digital fortresses that convert.
                     </p>
                   </div>
-                  <div className="relative sm:absolute sm:top-0 sm:right-0 sm:bottom-0 w-full h-[250px] sm:h-full sm:w-1/2 rounded-b-2xl sm:rounded-b-none overflow-hidden">
-                    <video src="/web-development.mp4" autoPlay loop muted playsInline className="absolute inset-0 h-full w-full object-cover"></video>
+                  <div className="relative w-full sm:w-1/2 h-[200px] sm:h-auto overflow-hidden">
+                    <video 
+                      className="absolute inset-0 h-full w-full object-cover opacity-60"
+                      autoPlay 
+                      loop 
+                      muted 
+                      playsInline
+                    >
+                      <source src="/web-development.mp4" type="video/mp4" />
+                    </video>
                   </div>
                 </div>
 
                 {/* UI/UX Design */}
-                <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-3 xl:row-start-1">
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-80 w-80 rounded-full bg-[rgba(218,91,211,0.6)] opacity-40 blur-[60px]"></div>
-                  <div className="p-8 pb-0 relative z-10 flex flex-col gap-4 mb-10 max-w-[400px] xl:max-w-none mx-auto">
+                <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b]">
+                  <div className="absolute bg-[#4d07e3] blur-[32px] top-[40%] -right-10 w-40 h-40 opacity-20"></div>
+                  <div className="relative z-10 flex flex-col gap-4 p-8 xl:p-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-palette h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path>
                       <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
@@ -77,7 +85,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                     </p>
                   </div>
                   <div className="relative mt-auto w-full h-[200px] md:h-[250px] xl:h-[350px]">
-                    <Image src="/uiux.webp" alt="UI/UX Design" fill className="object-cover" />
+                    <Image src="/uiux.webp" alt="UI/UX Design" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                   </div>
                 </div>
 
@@ -86,7 +94,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                   <div className="absolute bg-[rgba(73,77,147,0.6)] blur-[60px] -bottom-20 left-1/2 -translate-x-1/2 rounded-full w-80 h-80 pointer-events-none"></div>
                   <div className="absolute bg-[rgba(218,91,211,0.6)] blur-2xl top-[40%] -right-10 w-40 h-40 opacity-20 pointer-events-none"></div>
                   <div className="relative w-full h-[200px] xl:h-[340px] overflow-hidden">
-                    <Image src="/appdevelopment.webp" alt="App Development" fill className="object-cover" />
+                    <Image src="/appdevelopment.webp" alt="App Development" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                   </div>
                   <div className="relative z-10 flex flex-col gap-4 p-8 xl:p-10 mt-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code h-6 w-6 text-white/70" aria-hidden="true">
@@ -105,12 +113,12 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 {/* Logo / Branding Placeholder */}
                 <div className="hidden relative lg:flex flex-col items-center justify-between p-10 overflow-hidden rounded-2xl border border-[#525252] min-h-[350px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 group bg-[#080a11]">
                   <div className="absolute inset-0 bg-gradient-to-tr from-[#253a7a]/20 to-[#da5bd3]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                  
+
                   {/* Large Centered Logo */}
                   <div className="flex-1 flex items-center justify-center relative w-full">
                     <div className="absolute h-40 w-40 rounded-full bg-[#da5bd3]/10 blur-[60px] animate-pulse"></div>
                     <Image 
-                      src="/logo/image.png" 
+                      src="/gridmaps_icon.svg" 
                       alt="Gridmaps Logo" 
                       width={160} 
                       height={160} 
@@ -128,8 +136,8 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
 
                 {/* Digital Marketing */}
                 <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1 xl:col-start-2 xl:row-start-3">
-                  <div className="absolute bg-[rgba(30,46,94,0.7)] blur-[60px] -bottom-20 -right-10 rounded-full w-80 h-80"></div>
-                  <div className="relative z-10 flex flex-col gap-4 justify-center w-full p-8 md:p-10">
+                  <div className="absolute bg-[#4d07e3] blur-[48px] -right-20 top-1/2 -translate-y-1/2 rounded-full w-[320px] h-80 opacity-20"></div>
+                  <div className="relative z-10 flex flex-col gap-4 justify-center w-full sm:w-1/2 p-8 md:p-10 lg:pl-12">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-text-search h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="M21 5H3"></path>
                       <path d="M10 12H3"></path>
@@ -145,7 +153,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                     </p>
                   </div>
                   <div className="relative w-full h-[250px] sm:h-full sm:w-1/2 overflow-hidden">
-                    <Image src="/digitalmarketing.webp" alt="Digital Marketing" fill className="object-cover" />
+                    <Image src="/digitalmarketing.webp" alt="Digital Marketing" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" />
                   </div>
                 </div>
               </div>
@@ -161,41 +169,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
           ) : (
             /* Dedicated Services Hero Section */
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-              <div className="flex flex-col gap-6 lg:w-[60%] text-center lg:text-left">
-                <div className="flex flex-col gap-4">
-                  <h3 
-                    className="font-[Satoshi,sans-serif] text-sm md:text-base font-bold uppercase tracking-[0.2em] bg-clip-text text-transparent"
-                    style={{ backgroundImage: 'linear-gradient(90deg, #3b82f6, #8b5cf6)' }}
-                  >
-                    Our Services
-                  </h3>
-                  <h1 
-                    className="font-[Satoshi,sans-serif] text-4xl md:text-5xl lg:text-[64px] font-bold bg-clip-text text-transparent leading-[1.1] tracking-tight" 
-                    style={{ backgroundImage: 'linear-gradient(160deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
-                    Services of Gridmaps
-                  </h1>
-                </div>
-                <p 
-                  className="font-[Satoshi,sans-serif] text-lg md:text-xl leading-relaxed max-w-[600px] mx-auto lg:mx-0 bg-clip-text text-transparent"
-                  style={{ backgroundImage: 'linear-gradient(176deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}
-                >
-                  We offer a wide range of IT services to help businesses transform and grow. Our team of experts is dedicated to delivering innovative solutions that meet your specific needs.
-                </p>
-              </div>
-              
-              <div className="lg:w-[40%] relative flex justify-center">
-                 <div className="absolute inset-0 bg-blue-600/10 blur-[100px] rounded-full"></div>
-                 <div className="relative z-10 w-full max-w-[554px]">
-                   <Image 
-                    src="https://brainstation-23.com/wp-content/uploads/2025/07/all-service-page-1.png" 
-                    alt="Services Illustration" 
-                    width={554} 
-                    height={380} 
-                    className="w-full h-auto object-contain brightness-95 contrast-110"
-                    priority
-                   />
-                 </div>
-              </div>
+               {/* Content for dedicated variant */}
             </div>
           )}
         </div>
