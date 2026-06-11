@@ -47,13 +47,13 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 
-  --animate-logo-cloud: logo-cloud 30s linear infinite;
+  --animate-logo-cloud: marquee 40s linear infinite;
   --animate-pause: pause;
 }
 
-@keyframes logo-cloud {
-  from { transform: translateX(0); }
-  to { transform: translateX(calc(-100% - 1.5rem)); }
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 :root {

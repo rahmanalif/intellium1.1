@@ -70,22 +70,40 @@ const Hero = () => {
       </div>
 
       {/* Logo Marquee Section */}
-      <div className="relative z-10 mx-auto mt-10 lg:mt-16 max-w-[1440px] overflow-hidden py-6">
-        <div className="flex w-max animate-logo-cloud items-center gap-6 lg:gap-8 pr-6 lg:pr-8">
-          {[...partners, ...partners].map((logo, index) => (
-            <div 
-              key={index}
-              className="flex h-6 lg:h-8 w-24 lg:w-30 shrink-0 items-center justify-center"
-            >
-              <Image 
-                src={logo.src} 
-                alt={logo.name} 
-                width={120} 
-                height={40} 
-                className="w-full h-auto object-contain opacity-30"
-              />
-            </div>
-          ))}
+      <div className="relative z-10 w-full mt-10 lg:mt-16 overflow-hidden py-6">
+        <div className="flex w-max animate-logo-cloud items-center">
+          <div className="flex items-center gap-12 lg:gap-20 pr-12 lg:pr-20">
+            {partners.map((logo, index) => (
+              <div 
+                key={`p1-${index}`}
+                className="flex h-6 lg:h-8 shrink-0 items-center justify-center"
+              >
+                <Image 
+                  src={logo.src} 
+                  alt={logo.name} 
+                  width={120} 
+                  height={40} 
+                  className="w-auto h-full object-contain opacity-30 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex items-center gap-12 lg:gap-20 pr-12 lg:pr-20">
+            {partners.map((logo, index) => (
+              <div 
+                key={`p2-${index}`}
+                className="flex h-6 lg:h-8 shrink-0 items-center justify-center"
+              >
+                <Image 
+                  src={logo.src} 
+                  alt={logo.name} 
+                  width={120} 
+                  height={40} 
+                  className="w-auto h-full object-contain opacity-30 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
