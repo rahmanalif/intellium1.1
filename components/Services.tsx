@@ -10,7 +10,7 @@ interface ServicesProps {
 const Services = ({ variant = 'home' }: ServicesProps) => {
   return (
     <div id="services">
-      <section className="relative w-full overflow-hidden py-16 md:py-25">
+      <section className="relative w-full overflow-hidden pt-12 md:pt-20 pb-16 md:pb-25">
         {/* Background Glows */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute bg-[#253a7a] blur-[60px] md:blur-[100px] opacity-50 rounded-full w-full max-w-[500px] h-[500px]" style={{ top: '10%', right: '-10%' }}></div>
@@ -22,7 +22,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
           {variant === 'home' ? (
             <>
               {/* Heading Section */}
-              <div className="mb-10 md:mb-16 flex flex-col items-center gap-6">
+              <div className="mb-8 md:mb-12 flex flex-col items-center gap-6">
                 <h2 className="flex flex-wrap justify-center gap-2 md:gap-[12.9px] font-[Satoshi,sans-serif] text-4xl md:text-[48px] font-bold text-center">
                   <span className="bg-clip-text text-transparent leading-[1.2]" style={{ backgroundImage: 'linear-gradient(150deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
                     The Capabilities: The Power Spectrum
@@ -41,7 +41,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 {/* 1. Web Development - Top Left (Spans 2 cols) */}
                 <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1 group transition-all duration-300">
                   <div className="absolute bg-[#253a7a] blur-[32px] -bottom-20 right-0 md:right-40 rounded-full w-[320px] h-80"></div>
-                  <div className="relative z-10 flex flex-col gap-4 justify-center items-center text-center w-full sm:w-1/2 p-8 md:p-10">
+                  <div className="relative z-10 flex flex-col gap-4 justify-start items-center text-center w-full sm:w-1/2 pt-12 pb-8 md:pt-16 md:pb-10 px-8 md:px-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe h-6 w-6 text-white/70" aria-hidden="true">
                       <circle cx="12" cy="12" r="10"></circle>
                       <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
@@ -51,7 +51,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                       Web Development
                     </h3>
                     <p className="font-[Satoshi,sans-serif] text-sm md:text-base bg-clip-text text-transparent leading-relaxed" style={{ backgroundImage: 'linear-gradient(168deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
-                      Concepts transformed into high-velocity experiences. We engineer story-driven sites and premium products that never lag.
+                      Concepts transformed into high-velocity experiences. We engineer story-driven sites and products that never lag.
                     </p>
                   </div>
                   <div className="relative sm:absolute sm:top-0 sm:right-0 sm:bottom-0 w-full h-[250px] sm:h-full sm:w-1/2 rounded-b-2xl sm:rounded-b-none overflow-hidden">
@@ -70,7 +70,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 {/* 2. UI/UX Design - Right Column (Spans 2 rows) */}
                 <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-3 xl:row-start-1 group transition-all duration-300">
                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-80 w-80 rounded-full bg-[rgba(218,91,211,0.6)] opacity-40 blur-[60px]"></div>
-                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-center text-center p-8 md:p-10 max-w-[400px] xl:max-w-none mx-auto min-h-[350px]">
+                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-start text-center pt-12 pb-8 md:pt-16 md:pb-10 px-8 md:px-10 max-w-[400px] xl:max-w-none mx-auto min-h-[300px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-palette h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path>
                       <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
@@ -100,16 +100,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-1 xl:row-start-2 min-h-[450px] group transition-all duration-300">
                   <div className="absolute bg-[rgba(73,77,147,0.6)] blur-[60px] -bottom-20 left-1/2 -translate-x-1/2 rounded-full w-80 h-80 pointer-events-none"></div>
                   <div className="absolute bg-[rgba(218,91,211,0.6)] blur-2xl top-[40%] -right-10 w-40 h-40 opacity-20 pointer-events-none"></div>
-                  <div className="relative w-full h-[200px] xl:h-[340px] overflow-hidden shrink-0">
-                    <Image 
-                      src="/appdevelopment.webp" 
-                      alt="App Development" 
-                      fill 
-                      sizes="(max-width: 768px) 100vw, 33vw" 
-                      className="object-cover" 
-                    />
-                  </div>
-                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-center text-center p-8 xl:p-10">
+                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-start text-center pt-12 pb-8 md:pt-16 md:pb-10 px-8 md:px-10 max-w-[400px] xl:max-w-none mx-auto min-h-[300px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="m16 18 6-6-6-6"></path>
                       <path d="m8 6-6 6 6 6"></path>
@@ -120,6 +111,15 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                     <p className="font-[Satoshi,sans-serif] text-sm md:text-base bg-clip-text text-transparent leading-relaxed" style={{ backgroundImage: 'linear-gradient(172deg, rgb(255,255,255) 10%, rgba(189,189,189,0.9) 60%, rgb(255,255,255) 90%)' }}>
                       Erase manual friction. We deploy intelligent software tailored to automate your most complex operations.
                     </p>
+                  </div>
+                  <div className="relative w-full h-[200px] xl:h-[340px] overflow-hidden shrink-0">
+                    <Image 
+                      src="/appdevelopment.webp" 
+                      alt="App Development" 
+                      fill 
+                      sizes="(max-width: 768px) 100vw, 33vw" 
+                      className="object-cover" 
+                    />
                   </div>
                 </div>
 
@@ -138,7 +138,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 {/* 5. Digital Marketing - Bottom Row (Spans 2 cols) */}
                 <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1 xl:col-start-2 xl:row-start-3 group transition-all duration-300">
                   <div className="absolute bg-[rgba(30,46,94,0.7)] blur-[60px] -bottom-20 -right-10 rounded-full w-80 h-80 opacity-40"></div>
-                  <div className="relative z-10 flex flex-col gap-4 justify-center items-center text-center w-full p-8 md:p-10">
+                  <div className="relative z-10 flex flex-col gap-4 justify-start items-center text-center w-full sm:w-1/2 pt-12 pb-8 md:pt-16 md:pb-10 px-8 md:px-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-text-search h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="M21 5H3"></path>
                       <path d="M10 12H3"></path>
@@ -153,7 +153,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                       Surgical SEO. Data-backed growth. We don&apos;t just find your audience; we help you own the market.
                     </p>
                   </div>
-                  <div className="relative w-full h-full overflow-hidden">
+                  <div className="relative sm:absolute sm:top-0 sm:right-0 sm:bottom-0 w-full h-[250px] sm:h-full sm:w-1/2 rounded-b-2xl sm:rounded-b-none overflow-hidden">
                     <Image 
                       src="/digitalmarketing.webp" 
                       alt="Digital Marketing" 
