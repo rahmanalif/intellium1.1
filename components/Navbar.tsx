@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
       <nav 
-        className="flex items-center justify-between md:justify-center w-full md:w-auto gap-4 md:gap-8 rounded-[32px] border border-[#404040] bg-white/5 px-2.5 py-2.5 md:pr-6 shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_8px_10px_0px_rgba(0,0,0,0.1)] transition-all duration-300"
+        className="flex items-center justify-between md:justify-center w-full md:w-auto gap-6 md:gap-12 rounded-[40px] border border-[#404040] bg-white/5 px-4 py-4 md:px-8 shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_8px_10px_0px_rgba(0,0,0,0.1)] transition-all duration-300"
         style={{ backdropFilter: 'blur(8px)' }}
       >
         {/* Logo Section */}
