@@ -124,13 +124,13 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 </div>
 
                 {/* 4. Logo / Middle Placeholder */}
-                <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 bg-[#080a11]">
+                <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2">
                 <Image 
                   src="/GridMaps_Icon_Pack/01_Big_FullDetail/GridMaps_Icon_Full_1024.png" 
                   alt="Gridmaps Logo" 
-                  width={180} 
-                  height={180} 
-                  className="relative z-10 w-32 md:w-full h-auto object-contain opacity-60 group-hover:opacity-100 transition-all duration-700"
+                  width={250} 
+                  height={250} 
+                  className="relative z-10 w-40 md:w-48 h-auto object-contain"
                 />
                 </div>
 
