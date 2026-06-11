@@ -15,7 +15,7 @@ const LogoButton = () => {
     >
       <div className="relative z-10 flex items-center gap-2">
         <Image 
-          src="/gridmaps_icon.svg" 
+          src="/GridMaps_Icon.svg" 
           alt="Gridmaps" 
           width={24} 
           height={24} 

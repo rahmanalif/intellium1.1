@@ -39,7 +39,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 w-full auto-rows-[minmax(350px,auto)] xl:grid-rows-[350px_350px_350px]">
                 
                 {/* 1. Web Development - Top Left (Spans 2 cols) */}
-                <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1">
+                <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1 group transition-all duration-300">
                   <div className="absolute bg-[#253a7a] blur-[32px] -bottom-20 right-0 md:right-40 rounded-full w-[320px] h-80"></div>
                   <div className="relative z-10 flex flex-col gap-4 justify-center items-center text-center w-full sm:w-1/2 p-8 md:p-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe h-6 w-6 text-white/70" aria-hidden="true">
@@ -68,9 +68,9 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 </div>
 
                 {/* 2. UI/UX Design - Right Column (Spans 2 rows) */}
-                <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-3 xl:row-start-1">
+                <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-3 xl:row-start-1 group transition-all duration-300">
                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-80 w-80 rounded-full bg-[rgba(218,91,211,0.6)] opacity-40 blur-[60px]"></div>
-                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-center text-center p-8 md:p-10 max-w-[400px] xl:max-w-none mx-auto">
+                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-center text-center p-8 md:p-10 max-w-[400px] xl:max-w-none mx-auto min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-palette h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path>
                       <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
@@ -97,7 +97,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 </div>
 
                 {/* 3. App Development - Middle Left (Spans 2 rows, under Web Dev) */}
-                <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-1 xl:row-start-2 min-h-[450px]">
+                <div className="relative flex flex-col overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-1 xl:col-span-1 xl:row-span-2 xl:col-start-1 xl:row-start-2 min-h-[450px] group transition-all duration-300">
                   <div className="absolute bg-[rgba(73,77,147,0.6)] blur-[60px] -bottom-20 left-1/2 -translate-x-1/2 rounded-full w-80 h-80 pointer-events-none"></div>
                   <div className="absolute bg-[rgba(218,91,211,0.6)] blur-2xl top-[40%] -right-10 w-40 h-40 opacity-20 pointer-events-none"></div>
                   <div className="relative w-full h-[200px] xl:h-[340px] overflow-hidden shrink-0">
@@ -109,7 +109,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                       className="object-cover" 
                     />
                   </div>
-                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-center text-center p-8 xl:p-10 mt-auto">
+                  <div className="flex-1 relative z-10 flex flex-col gap-4 items-center justify-center text-center p-8 xl:p-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-code h-6 w-6 text-white/70" aria-hidden="true">
                       <path d="m16 18 6-6-6-6"></path>
                       <path d="m8 6-6 6 6 6"></path>
@@ -124,10 +124,9 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 </div>
 
                 {/* 4. Logo / Middle Placeholder */}
-                <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 group bg-[#080a11]">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-[#253a7a]/20 to-[#da5bd3]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="hidden relative lg:flex items-center justify-center overflow-hidden rounded-2xl border border-[#525252] min-h-[250px] md:col-span-1 xl:col-span-1 xl:row-span-1 xl:col-start-2 xl:row-start-2 bg-[#080a11]">
                   <Image 
-                    src="/gridmaps_icon.svg" 
+                    src="/GridMaps_Icon.svg" 
                     alt="Gridmaps Logo" 
                     width={160} 
                     height={160} 
@@ -136,7 +135,7 @@ const Services = ({ variant = 'home' }: ServicesProps) => {
                 </div>
 
                 {/* 5. Digital Marketing - Bottom Row (Spans 2 cols) */}
-                <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1 xl:col-start-2 xl:row-start-3">
+                <div className="relative flex flex-col sm:flex-row overflow-hidden rounded-2xl border border-[#525252] bg-[#0e111b] md:col-span-2 xl:col-span-2 xl:row-span-1 xl:col-start-2 xl:row-start-3 group transition-all duration-300">
                   <div className="absolute bg-[rgba(30,46,94,0.7)] blur-[60px] -bottom-20 -right-10 rounded-full w-80 h-80 opacity-40"></div>
                   <div className="relative z-10 flex flex-col gap-4 justify-center items-center text-center w-full p-8 md:p-10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-text-search h-6 w-6 text-white/70" aria-hidden="true">

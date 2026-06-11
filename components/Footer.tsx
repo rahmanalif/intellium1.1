@@ -11,7 +11,7 @@ const Footer = () => {
             <Link className="flex items-center gap-2" href="/">
               <div className="flex items-center gap-3">
                 <Image 
-                  src="/gridmaps_icon.svg" 
+                  src="/GridMaps_Icon.svg" 
                   alt="Gridmaps Logo" 
                   width={32} 
                   height={32} 

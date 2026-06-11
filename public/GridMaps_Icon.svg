@@ -1,0 +1,86 @@
+<svg width="100%" viewBox="0 0 1024 1024" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>GridMaps app icon</title>
+  <defs>
+<linearGradient id="gmTile" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#161D3D"/>
+  <stop offset="0.55" stop-color="#0D1226"/>
+  <stop offset="1" stop-color="#0A0D1B"/>
+</linearGradient>
+<linearGradient id="gmTileInner" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#1B2348"/>
+  <stop offset="1" stop-color="#10152C"/>
+</linearGradient>
+<linearGradient id="gmCellBlue" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#6190FF"/>
+  <stop offset="1" stop-color="#2B5BF6"/>
+</linearGradient>
+<linearGradient id="gmCellGreen" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#17D89B"/>
+  <stop offset="1" stop-color="#00A876"/>
+</linearGradient>
+<linearGradient id="gmCellWhite" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#FFFFFF"/>
+  <stop offset="1" stop-color="#EBEFFA"/>
+</linearGradient>
+<radialGradient id="gmGlowBlue">
+  <stop offset="0" stop-color="#3A6FFF" stop-opacity="0.30"/>
+  <stop offset="1" stop-color="#3A6FFF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="gmGlowGreen">
+  <stop offset="0" stop-color="#00BA84" stop-opacity="0.26"/>
+  <stop offset="1" stop-color="#00BA84" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="gmSheen" cx="0.5" cy="0" r="1">
+  <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+  <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="gmShadow">
+  <stop offset="0" stop-color="#0B0E1C" stop-opacity="0.13"/>
+  <stop offset="0.7" stop-color="#0B0E1C" stop-opacity="0.06"/>
+  <stop offset="1" stop-color="#0B0E1C" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="gmAccent" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#3A6FFF"/>
+  <stop offset="1" stop-color="#00BA84"/>
+</linearGradient>
+<linearGradient id="gmBg" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#F9FAFE"/>
+  <stop offset="1" stop-color="#EEF1F8"/>
+</linearGradient>
+  </defs>
+<g transform="translate(0,0)">
+  <rect width="1024" height="1024" rx="170.7" fill="url(#gmTile)"/>
+  <rect width="1024" height="1024" rx="170.7" fill="url(#gmSheen)"/>
+  <rect x="4.09" y="4.09" width="1015.82" height="1015.82" rx="166.61" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="8.18"/>
+  <g transform="translate(116.364,116.364) scale(7.757569)">
+    <circle cx="51" cy="51" r="30" fill="url(#gmGlowBlue)"/>
+    <circle cx="87" cy="87" r="27" fill="url(#gmGlowGreen)"/>
+    <g fill="#FFFFFF" fill-opacity="0.07">
+      <rect x="36" y="0" width="30" height="30" rx="6"/>
+      <rect x="72" y="0" width="30" height="30" rx="6"/>
+      <rect x="0" y="36" width="30" height="30" rx="6"/>
+      <rect x="72" y="36" width="30" height="30" rx="6"/>
+      <rect x="0" y="72" width="30" height="30" rx="6"/>
+      <rect x="36" y="72" width="30" height="30" rx="6"/>
+    </g>
+    <g fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5" stroke-linecap="round">
+      <path d="M30 15 L48.5 15 Q52 15 54.4749 17.4749 L57.5251 20.5251 Q60 23 63.5 23 L82.5 23 Q86 23 86 26.5 L86 45"/>
+      <path d="M15 6 L15 80.5 Q15 84 18.5 84 L47.5 84 Q51 84 51 87.5 L51 101"/>
+      <path d="M15 47 L21.5 47 Q25 47 27.4749 49.4749 L29.2322 51.2322 Q31 53 33.5 53 L36 53"/>
+      <path d="M57 66 L57 86.5 Q57 90 60.5 90 L72 90"/>
+      <path d="M102 57 L84.5 57 Q81 57 81 60.5 L81 72"/>
+      <path d="M93 30 L93 21"/>
+      <path d="M0 93 L9 93"/>
+    </g>
+    <circle cx="15" cy="47" r="2.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="1.5"/>
+    <circle cx="86" cy="45" r="2.4" fill="none" stroke="#7FA3FF" stroke-opacity="0.60" stroke-width="1.5"/>
+    <circle cx="93" cy="21" r="1.7" fill="#FFFFFF" fill-opacity="0.38"/>
+    <circle cx="9" cy="93" r="1.7" fill="#2BDFA4" fill-opacity="0.60"/>
+    <rect x="0" y="0" width="30" height="30" rx="6" fill="url(#gmCellWhite)"/>
+    <rect x="36" y="36" width="30" height="30" rx="6" fill="url(#gmCellBlue)"/>
+    <rect x="36.75" y="36.75" width="28.5" height="28.5" rx="5.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1"/>
+    <rect x="72" y="72" width="30" height="30" rx="6" fill="url(#gmCellGreen)"/>
+    <rect x="72.75" y="72.75" width="28.5" height="28.5" rx="5.4" fill="none" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1"/>
+  </g>
+</g>
+</svg>
