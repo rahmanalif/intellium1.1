@@ -35,15 +35,15 @@ const Testimonial = () => {
               <div className="flex items-center gap-3 md:gap-4 mt-2">
                 <div className="relative h-10 w-10 md:h-12.5 md:w-12.5 overflow-hidden rounded-full shrink-0">
                   <Image 
-                    src="/dua.webp" 
-                    alt="Dua Lipa" 
+                    src="/logo/image.png" 
+                    alt="Person" 
                     fill 
                     className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-0.5 text-white">
-                  <span className="font-[Satoshi,sans-serif] text-sm md:text-base font-bold">— Dua Lipa</span>
-                  <span className="font-[Satoshi,sans-serif] text-xs md:text-sm opacity-80">Singer</span>
+                  <span className="font-[Satoshi,sans-serif] text-sm md:text-base font-bold">— Sarah Mitchell</span>
+                  <span className="font-[Satoshi,sans-serif] text-xs md:text-sm opacity-80">Marketing Consultant</span>
                 </div>
               </div>
             </div>

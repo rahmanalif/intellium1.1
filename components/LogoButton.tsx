@@ -21,7 +21,7 @@ const LogoButton = () => {
           height={24} 
           className="h-6 w-6"
         />
-        <span className="text-sm font-bold tracking-tight">Gridmaps</span>
+        <span className="text-sm font-bold tracking-tight">GridMaps</span>
       </div>
       <div className="absolute inset-0 pointer-events-none rounded-full shadow-[inset_0px_1px_0px_0px_rgba(255,255,255,0.4),inset_0px_-6px_4px_0px_rgba(0,0,0,0.2)]"></div>
     </Link>
