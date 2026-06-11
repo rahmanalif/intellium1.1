@@ -35,7 +35,7 @@ const Testimonial = () => {
               <div className="flex items-center gap-3 md:gap-4 mt-2">
                 <div className="relative h-10 w-10 md:h-12.5 md:w-12.5 overflow-hidden rounded-full shrink-0">
                   <Image 
-                    src="/logo/image.png" 
+                    src="/GridMaps_Icon_Pack/02_Medium_Simplified/GridMaps_Icon_Medium_256.png" 
                     alt="Person" 
                     fill 
                     className="object-cover"

@@ -11,13 +11,13 @@ const Footer = () => {
             <Link className="flex items-center gap-2" href="/">
               <div className="flex items-center gap-3">
                 <Image 
-                  src="/GridMaps_Icon.svg" 
+                  src="/GridMaps_Icon_Pack/03_Small_Minimal/GridMaps_Icon_Small_128.png" 
                   alt="Gridmaps Logo" 
                   width={32} 
                   height={32} 
                   className="w-7 h-7 md:w-8 md:h-8 object-contain"
                 />
-                <span className="text-xl md:text-2xl font-bold text-white tracking-tight font-[Satoshi,sans-serif]">Gridmaps</span>
+                <span className="text-xl md:text-2xl font-bold text-white tracking-tight font-[Satoshi,sans-serif] uppercase">Gridmaps</span>
               </div>
             </Link>
             <p className="max-w-[300px] font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] leading-relaxed">
@@ -27,40 +27,38 @@ const Footer = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex gap-8 sm:gap-12 lg:gap-20">
             <div className="flex flex-col gap-4">
-              <h5 className="font-[Satoshi,sans-serif] text-sm font-bold text-white text-nowrap">Company</h5>
-              <div className="flex flex-col gap-3">
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white" href="#">About</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white" href="#">Careers</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white" href="#">Blog</Link>
-              </div>
-            </div>
-            
-            <div className="flex flex-col gap-4">
-              <h5 className="font-[Satoshi,sans-serif] text-sm font-bold text-white text-nowrap">Services</h5>
-              <div className="flex flex-col gap-3">
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">Web Development</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">UI/UX Design</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">App Development</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">Digital Marketing</Link>
-              </div>
+              <h4 className="font-[Satoshi,sans-serif] text-sm font-bold text-white uppercase tracking-wider">Company</h4>
+              <nav className="flex flex-col gap-2">
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="/about">About Us</Link>
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="/career">Careers</Link>
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="/#services">Services</Link>
+              </nav>
             </div>
 
             <div className="flex flex-col gap-4">
-              <h5 className="font-[Satoshi,sans-serif] text-sm font-bold text-white text-nowrap">Resources</h5>
-              <div className="flex flex-col gap-3">
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">Case Studies</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">Documentation</Link>
-                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] transition-colors hover:text-white text-nowrap" href="#">Support</Link>
-              </div>
+              <h4 className="font-[Satoshi,sans-serif] text-sm font-bold text-white uppercase tracking-wider">Connect</h4>
+              <nav className="flex flex-col gap-2">
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="https://linkedin.com">LinkedIn</Link>
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="https://twitter.com">Twitter</Link>
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="mailto:hello@gridmaps.com">Email Us</Link>
+              </nav>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h4 className="font-[Satoshi,sans-serif] text-sm font-bold text-white uppercase tracking-wider">Legal</h4>
+              <nav className="flex flex-col gap-2">
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="#">Privacy Policy</Link>
+                <Link className="font-[Satoshi,sans-serif] text-sm text-[#a3a3a3] hover:text-white transition-colors" href="#">Terms of Service</Link>
+              </nav>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 md:mt-16 flex flex-col md:flex-row items-center justify-between border-t border-white/5 pt-8 gap-4 md:gap-0">
-          <span className="font-[Satoshi,sans-serif] text-xs text-[#525252] text-center md:text-left">
-            © 2026 Gridmaps. All rights reserved.
-          </span>
-          <div className="flex flex-wrap justify-center items-center gap-6">
+        <div className="mt-16 md:mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="font-[Satoshi,sans-serif] text-xs text-[#525252]">
+            © {new Date().getFullYear()} Gridmaps. All rights reserved.
+          </p>
+          <div className="flex gap-6">
             <Link className="font-[Satoshi,sans-serif] text-xs text-[#525252] hover:text-white transition-colors" href="#">Privacy Policy</Link>
             <Link className="font-[Satoshi,sans-serif] text-xs text-[#525252] hover:text-white transition-colors" href="#">Terms of Service</Link>
           </div>
